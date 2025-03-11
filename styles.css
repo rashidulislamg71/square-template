@@ -9,7 +9,8 @@
 
 body {
   max-width: 1400vh;
-  width: 100vh;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   font-family: "Noto Sans Bengali";
 }
@@ -30,6 +31,18 @@ li {
   gap: 10px;
 }
 
+.btn{
+  color: #ffff;
+  border: none;
+  outline: none;
+  padding: 4px 20px;
+  font-size: 16px;
+  background: #079992;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px gray;
+}
+
 :root {
   --primary-color: rgba(48, 47, 47, 0.849);
   --heading-color: #130f40;
@@ -41,14 +54,11 @@ li {
 
 .header_container {
   position: relative;
+  z-index: 100;
 }
 
 .header_inner_content {
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
   background: #ffff;
   box-shadow: 0px 1px 10px gray;
   padding: 10px 60px;
@@ -79,15 +89,7 @@ li {
   color: var(--heading-color);
 }
 .admission_btn {
-  color: #ffff;
-  border: none;
-  outline: none;
   padding: 4px 30px;
-  font-size: 16px;
-  background: #079992;
-  border-radius: 2px;
-  cursor: pointer;
-  box-shadow: 1px 1px 15px gray;
   margin-left: 80px;
 }
 
@@ -131,7 +133,7 @@ i#menuCloseBtn {
     position: absolute;
     top: 67px;
     right: 0;
-    width: 40%;
+    width: 50%;
     background: rgb(110, 212, 219);
     gap: 20px;
     transition: all 0.5s;
@@ -175,3 +177,57 @@ i#menuCloseBtn {
 }
 
 /* header styles end */
+.hero_container {
+
+}
+
+/* Change dot position */
+.slick-dots {
+  bottom: 20px;
+}
+/* Change dot color */
+.slick-dots li button:before {
+  color: rgba(235, 231, 231, 0.527); 
+  font-size: 12px;
+  opacity: 0.75; 
+
+}
+
+/* Change active dot color */
+.slick-dots li.slick-active button:before {
+  color: rgb(244, 247, 247) !important; 
+  opacity: 1;
+}
+
+
+.hero_notice_container {
+  
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 15px 20px;
+  background: rgb(9, 100, 100);
+  font-size: 17px;
+  color: #ffffffd2;
+  font-weight: bold;
+  margin-top: -30px;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(1%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

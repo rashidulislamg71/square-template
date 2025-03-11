@@ -1,46 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/SPI_LOGO.png">
     <title>Square Polytechni</title>
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
 
     <!-- custom css link  -->
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- header section start -->
-        <div class="header_container">
-            <div class="flex inner_content header_inner_content">
-                <div class="flex logo">
-                    <img src="./images/SPI_LOGO.png" alt="square polytechnic logo"> 
-                    <h3>স্কয়ার পলিটেকনিক <br> ইন্সটিটিউট</h3>
-                </div>
+    <div class="header_container">
+        <div class="flex inner_content header_inner_content">
+            <div class="flex logo">
+                <img src="./images/SPI_LOGO.png" alt="square polytechnic logo">
+                <h3>স্কয়ার পলিটেকনিক <br> ইন্সটিটিউট</h3>
+            </div>
 
-                <div class="flex menu_content">
-                    <ul id="menuLink" class="menu_link flex">
-                        <li><a href="#">হোম</a></li>
-                        <li><a href="#">ডিপার্টমেন্টস</a></li>
-                        <li><a href="#">গ্যালারি</a></li>
-                        <li><a href="#">সাফল্য</a></li>
-                        <li><a href="#">আমাদের সম্পর্কে </a></li>
-                        <li><a href="#">যোগাযোগ</a></li>
-                        <li><a href="#">নোটিশ</a></li>
-                    </ul>
-                    <button class="flex admission_btn">ভর্তি জন্য</button>
-                    <div id="menuToggle" class="flex menu_toggle">
-                        <i id="menuOpenBtn" class="fa-solid fa-bars"></i>
-                        <i id="menuCloseBtn" class="fa-solid fa-xmark hidden"></i>
-                    </div>
+            <div class="flex menu_content">
+                <ul id="menuLink" class="menu_link flex">
+                    <li><a href="#">হোম</a></li>
+                    <li><a href="#">ডিপার্টমেন্টস</a></li>
+                    <li><a href="#">গ্যালারি</a></li>
+                    <li><a href="#">সাফল্য</a></li>
+                    <li><a href="#">আমাদের সম্পর্কে </a></li>
+                    <li><a href="#">যোগাযোগ</a></li>
+                    <li><a href="#">নোটিশ</a></li>
+                </ul>
+                <button class="btn flex admission_btn">ভর্তি জন্য</button>
+                <div id="menuToggle" class="flex menu_toggle">
+                    <i id="menuOpenBtn" class="fa-solid fa-bars"></i>
+                    <i id="menuCloseBtn" class="fa-solid fa-xmark hidden"></i>
                 </div>
             </div>
         </div>
+    </div>
     <!-- header section end -->
+    <!-- Hero section  start -->
+    <div class="hero_container">
+        <div class="hero_inner_content hero_slider">
+            <!-- <div class="single_slider slider_1">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button  class="btn hero_btn">আরও জানুন...</button>
+                </div>
+                <div class="single_slider slider_2">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button class="btn">আরও জানুন...</button>
+                </div>
+                <div class="single_slider slider_3">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button class="btn hero_btn">আরও জানুন...</button>
+                </div>
+                <div class="single_slider slider_4">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button class="btn hero_btn">আরও জানুন...</button>
+                </div>
+                <div class="single_slider slider_5">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button class="btn hero_btn">আরও জানুন...</button>
+                </div>
+                <div class="single_slider slider_6">
+                    <h2>"যেখানে উদ্ভাবন ও শিক্ষা একসাথে"</h2>
+                    <p>আপনার স্বপ্ন পূরণের সেরা ঠিকানা, স্কয়ার পলিটেকনিক ইন্সটিটিউট </p>
+                    <button class="btn hero_btn">আরও জানুন...</button>
+                </div> -->
+            <img src="./images/Horo_bg/bg_1.png" alt="">
+            <img src="./images/Horo_bg/bg_3.png" alt="">
+            <img src="./images/Horo_bg/bg_4.png" alt="">
+            <img src="./images/Horo_bg/bg_6.png" alt="">
+            <img src="./images/Horo_bg/bg_7.png" alt="">
+        </div>
+    </div>
+    <!-- Hero section  end -->
+
+    <!-- hero notice section start -->
+    <div class="hero_notice_container">
+        <div class="flex hero_notice_inner_content">
+            <div class="marquee">
+                <div class="marquee-text">
+                    ****নোটিশ**** ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং, ডিপ্লোমা ইন মেরিন ইঞ্জনিয়ারিং শিক্ষাক্রমের ৩য় পর্বে অধ্যয়নরত
+                    শিক্ষার্থীদের
+                    বদলি আবেদন সংক্রান্ত বিজ্ঞপ্তি প্রকাশিত হেয়েছে। আবেদনের শেষে তারিখঃ ২০-০২-২০২৫ ইং।
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero notice section end -->
+
+
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
     <!-- javaScript link  -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

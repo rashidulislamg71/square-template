@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
 });
+
+
+$(document).ready(function(){
+    $('.hero_slider').slick({
+        infinite: true,  // Looping slider
+        slidesToShow: 1, // Show 1 image at a time
+        slidesToScroll: 1, // Scroll 1 image at a time
+        autoplay: true, // Enable auto-slide
+        autoplaySpeed: 4000, // 2 seconds delay
+        dots: true, // Add navigation dots
+        arrows: false // Hide previous/next arrows (optional)
+    });
+});
+
